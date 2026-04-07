@@ -37,7 +37,7 @@
       <div class="paper-authors">with Jangho Yang, Tim O'Reilly, Sruly Rosenblat, and Isobel Moure</div>
       <div class="paper-venue"><em>Data for Policy</em></div>
       <span class="paper-status forthcoming">Forthcoming</span>
-      <p class="paper-abstract"><em>Web-enabled LLMs frequently answer queries without crediting sources. We estimate how much value flows from content creators to AI systems and quantify the scale of attribution failure across major LLM search tools.</em></p>
+      <p class="paper-abstract"><em>Web-enabled LLMs frequently answer queries without crediting the web pages they consume, creating an "attribution gap"—the difference between relevant URLs visited and those actually cited. Analyzing ~14,000 real-world queries across OpenAI, Perplexity, and Google systems, we document three exploitation patterns: (1) No search: 34% of Gemini and 24% of GPT-4o responses skip web retrieval entirely; (2) No citation: Gemini provides no clickable sources in 92% of answers; (3) High-volume, low-credit: Perplexity visits ~10 relevant pages per query but cites only 3-4. Using a negative binomial hurdle model, we show that citation efficiency—extra citations per additional webpage consumed—varies from 0.19 to 0.45 across models, demonstrating that retrieval design, not technical limits, shapes ecosystem impact. We recommend transparent LLM search telemetry through standardized observability protocols.</em></p>
     </div>
 
     <div class="paper-entry">
@@ -47,7 +47,7 @@
       <div class="paper-authors">with Isobel Moure, Tim O'Reilly, and Sruly Rosenblat</div>
       <div class="paper-venue"><em>IEEE Access</em></div>
       <span class="paper-status forthcoming">Forthcoming</span>
-      <p class="paper-abstract"><em>AI governance research concentrates on frontier risks while neglecting everyday deployment failures. We map the gap between academic priorities and the reliability issues users actually encounter.</em></p>
+      <p class="paper-abstract"><em>Analyzing 1,178 safety and reliability papers from 9,439 generative AI papers (2020–2025) across leading AI companies and universities, we find that corporate AI research increasingly concentrates on pre-deployment areas—model alignment and testing—while attention to deployment-stage issues like model bias has waned. Only 4% of corporate papers tackle high-risk deployment domains (healthcare, finance, misinformation, persuasion, hallucinations, copyright) despite these being material business risks. Google DeepMind alone has more citations for AI safety research than the top four academic institutions combined, and research findings are increasingly kept internal. Without improved observability into deployed AI systems, growing corporate concentration will deepen knowledge deficits. We recommend expanding external researcher access to deployment telemetry data and model artifacts.</em></p>
     </div>
 
     <div class="paper-entry">
@@ -57,7 +57,7 @@
       <div class="paper-authors">with Sruly Rosenblat and Tim O'Reilly</div>
       <div class="paper-venue"><em>AI and Ethics</em></div>
       <span class="paper-status forthcoming">Forthcoming</span>
-      <p class="paper-abstract"><em>Using membership inference methods, we find evidence that OpenAI models were trained on non-public, paywalled O'Reilly books—raising questions about training data provenance and copyright compliance.</em></p>
+      <p class="paper-abstract"><em>Using the DE-COP membership inference method on 34 legally obtained copyrighted O'Reilly Media books—each containing both publicly accessible preview content and paywalled sections—we test whether OpenAI's models were trained on non-public copyrighted content. GPT-4o shows strong recognition of paywalled book content (82% AUROC) versus public samples (64% AUROC), the opposite of what we'd expect if training used only publicly available data. In contrast, the earlier GPT-3.5 Turbo shows the reverse pattern (54% non-public vs. 64% public), suggesting that the role of non-public data in OpenAI's training has increased significantly over time. Testing models with identical cutoff dates (GPT-4o vs. GPT-4o Mini) rules out temporal language shifts as an explanation. These findings highlight the urgent need for corporate transparency on pre-training data sources and formal licensing frameworks for AI content training.</em></p>
       <div class="paper-coverage">
         <strong>Coverage:</strong>
         <a href="https://techcrunch.com/2025/04/01/researchers-suggest-openai-trained-ai-models-on-paywalled-oreilly-books/">TechCrunch</a> |
@@ -68,12 +68,12 @@
 
     <div class="paper-entry">
       <div class="paper-title">
-        <a href="https://arxiv.org/pdf/2509.26523">"Rich-Get-Richer"? Analyzing Content Creator Earnings Across Large Social Media Platforms</a>
+        <a href="https://arxiv.org/pdf/2509.26523">"Rich-Get-Richer"? Platform Attention and Earnings Inequality Using Patreon Data</a>
       </div>
       <div class="paper-authors">with Jangho Yang and Mariana Mazzucato</div>
       <div class="paper-venue"><em>Industrial and Corporate Change</em></div>
       <span class="paper-status forthcoming">Forthcoming</span>
-      <p class="paper-abstract"><em>Do platform algorithms concentrate earnings among top creators? We analyze creator economy dynamics using earnings data from major social media platforms to test power-law concentration patterns.</em></p>
+      <p class="paper-abstract"><em>Using monthly Patreon earnings data for 104,719 creators (2018–2024), we quantify how platform attention algorithms shape earnings concentration across creator economies. Since Patreon offers little native distribution, its earnings proxy well for attention captured on external platforms (Instagram, YouTube, Twitch, Twitter/X). We find a Pareto exponent around α ≈ 2, placing creator earnings closer to concentrated capital income (α ≈ 1.5) than labor income, consistent with a compounding "rich-get-richer" dynamic. Platforms with stronger power laws (YouTube, Instagram) exhibit weaker creator "middle classes"—gains are drawn disproportionately from mid-tier creators. Over time, we observe growing convergence toward steeper inequality across platforms, with Instagram's α worsening from 2.1 (2021) to 1.84 (2024) as algorithmic recommendations rise in importance relative to user-filtered social graphs.</em></p>
     </div>
 
     <div class="paper-entry">
@@ -83,7 +83,7 @@
       <div class="paper-authors">with Jangho Yang</div>
       <div class="paper-venue"><em>Applied Economics Letters</em></div>
       <span class="paper-status forthcoming">Forthcoming</span>
-      <p class="paper-abstract"><em>Using patent citation data, we show Big Tech firms systematically use acquisitions to build technological capabilities in adjacent domains—not just to eliminate competition.</em></p>
+      <p class="paper-abstract"><em>Using a unique dataset covering all patents ultimately owned by Big Tech—including through M&A—we describe the dynamic capabilities acquired and developed by Apple, Amazon, Alphabet, Meta, and Microsoft (2000–2022). Our analysis reveals that M&A has been crucial for Big Tech developing integrated hardware-software ecosystems: at least 10–13% of total patent counts were acquired externally (a lower bound, since Big Tech also innovates internally based on external technologies). Acquired patents receive more forward citations than internally developed ones, suggesting acquisitions target highly productive technology. We show how Big Tech's evolving capabilities closely track their competitive potential and market entry strategies, offering an empirical framework for applying dynamic capabilities analysis to antitrust oversight of serial acquisitions.</em></p>
     </div>
 
     <div class="paper-entry">
@@ -92,6 +92,7 @@
       </div>
       <div class="paper-authors">with Tim O'Reilly and Mariana Mazzucato</div>
       <div class="paper-venue"><em>UC Law Science and Technology Journal</em>, Vol. 15, 2024: 203</div>
+      <p class="paper-abstract"><em>Amazon's $37.7 billion advertising business marks a departure from its original 'flywheel' strategy of growth through better user experience. We show how Amazon shifted to a 'quest for profit' by compelling merchants to pay for product visibility that was previously earned through relevance and price competition. This exploits the informationally complex online environment where users rely on algorithmic curation for decision-making—when Amazon places 'Amazon's Choice' badges, sales increase 25%; 'Best Seller' badges boost page views 45%. We challenge the Chicago School assumption that 'competition is just a click away': in practice, users satisfice rather than optimize, enabling Amazon to persistently degrade results quality while maintaining clicks. We define platform dominance as the ability to disregard information relevance within its ecosystem and still profit, with implications for both antitrust and consumer protection frameworks.</em></p>
       <div class="paper-coverage">
         <strong>Coverage:</strong>
         <a href="https://doctorow.medium.com/big-techs-attention-rents-fe97ba3fad90">Cory Doctorow</a> |
@@ -105,6 +106,7 @@
       </div>
       <div class="paper-authors">with Rachel Rock, Tim O'Reilly, and Mariana Mazzucato</div>
       <div class="paper-venue"><em>Information Economics and Policy</em>, Vol. 69, 101115, 2024</div>
+      <p class="paper-abstract"><em>Can platforms persistently allocate user attention to inferior, paid search results? This empirical companion to our theoretical work tests whether Amazon can profitably degrade its search algorithm through advertising. Analyzing Amazon's product search results, we find that the first position has an 80% probability of being a paid advertisement—yet products in this 'attention-dominant' position still receive disproportionate clicks regardless of relevance. A product in the bottom 10% for relevance but the highest attention position is as likely to be clicked as a top-5 most relevant product in an average position. These findings support our theory that platforms with sufficient market power can extract 'algorithmic attention rents' by substituting paid results for organic ones, capturing value from both users (through inferior results) and merchants (through mandatory advertising fees).</em></p>
     </div>
 
     <div class="paper-entry">
@@ -113,6 +115,7 @@
       </div>
       <div class="paper-authors">with Tim O'Reilly and Mariana Mazzucato</div>
       <div class="paper-venue"><em>Data & Policy</em>, Vol. 6, e6, 2024</div>
+      <p class="paper-abstract"><em>We develop a theory of 'algorithmic attention rents' in digital aggregator platforms. The scarce factor of production that enables platform market power is not data but user attention. Platforms extract rents by deviating from their own best-possible ('organic') algorithmic results to favor paid placements, self-preferencing, or engagement-maximizing content. We show that 78% of Amazon's most-clicked products appear in the first two rows of search results, and 32% of shoppers simply buy the first product listed—giving platforms enormous power over commercial outcomes. This algorithmic authority over attention enables platforms to convert non-pecuniary rents (user time, inferior results) into pecuniary rents from suppliers and advertisers. Our framework shifts regulatory focus from privacy and data to the fairness of attention allocations, and calls for mandatory disclosure of the operating metrics platforms use to allocate user attention.</em></p>
     </div>
 
     <div class="paper-entry">
@@ -121,6 +124,7 @@
       </div>
       <div class="paper-authors">with Mariana Mazzucato, Tim O'Reilly, and Josh Ryan-Collins</div>
       <div class="paper-venue"><em>Oxford Review of Economic Policy</em>, Vol. 39, Issue 1, pp. 47-69, Spring 2023</div>
+      <p class="paper-abstract"><em>Current disclosure frameworks (10-K financial reports) were designed for industrial economies based on physical assets, not digital platforms. Big Tech's annual reports reveal little about their globally dominant 'free' services, platform user numbers, or monetization practices. We show how these disclosure gaps hobble antitrust investigations—the FTC had to rely on third-party estimates of WhatsApp and Instagram users in its Facebook filings—impede competitor entry, and distort capital allocation. We propose mandatory SEC-style disclosures covering: (i) operating metrics like monthly active users that underpin market share; (ii) 'free' products that escape profit/loss reporting; (iii) monetization processes connecting users to revenue; and (iv) product-by-product segment reporting. Such disclosures would empower investors, regulators, researchers, and competitors to understand these systemically important firms.</em></p>
       <div class="paper-coverage">
         <strong>Coverage:</strong>
         <a href="https://www.ft.com/content/99ca12c5-498e-4ee4-8046-a27cd0a1038b">Financial Times</a> |
