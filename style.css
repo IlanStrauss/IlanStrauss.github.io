@@ -1,0 +1,284 @@
+/* Clean Academic Portfolio - Inspired by Danielle Li's site */
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f8f9fa;
+  --border-color: #e9ecef;
+  --link-color: #2980b9;
+  --link-hover: #1a5276;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+}
+
+/* Header & Navigation */
+header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.site-title a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* About Section - Homepage */
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.headshot {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  margin-right: 1rem;
+}
+
+/* Projects / Papers List */
+.paper-entry {
+  margin-bottom: 1.8rem;
+  padding-left: 0;
+}
+
+.paper-title {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.paper-title a {
+  color: var(--link-color);
+}
+
+.paper-authors {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.paper-venue {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.paper-status {
+  display: inline-block;
+  background: var(--light-gray);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.paper-status.wip {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.paper-status.forthcoming {
+  background: #d4edda;
+  color: #155724;
+}
+
+.paper-abstract {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.paper-links {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.paper-links a {
+  margin-right: 1rem;
+}
+
+.paper-coverage {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.paper-coverage strong {
+  color: #555;
+}
+
+/* Section dividers */
+.section-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headshot {
+    width: 150px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Lists */
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Affiliations list */
+.affiliations {
+  list-style: none;
+  margin-left: 0;
+  font-size: 0.95rem;
+}
+
+.affiliations li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tags for research areas */
+.research-areas {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--light-gray);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
